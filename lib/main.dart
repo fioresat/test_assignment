@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test_assignment/screens/cart_screen.dart';
 import 'package:test_assignment/screens/main_screen.dart';
 import 'package:test_assignment/screens/product_details_screen.dart';
 
@@ -17,7 +18,13 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: ProductDetails(),
+        home: const MainScreen(),
+        initialRoute: '/main_screen',
+        routes: {
+          '/product_details_screen': (context) => ProductDetailsScreen(),
+          '/cart_screen': (context) => CartScreen(),
+          '/main_screen': (context) => MainScreen(),
+        }
     );
   }
 }

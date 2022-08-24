@@ -47,7 +47,7 @@ int selectedIndex = 0;
                         : Colors.white,
                     shape: BoxShape.circle,
                   ),
-                  child: Icon(Consts.categoriesIcon[index],
+                  child: Image.asset(Consts.categoriesIcon[index],
                       color: (selectedIndex == index)
                           ? Colors.white
                           : Colors.grey)),

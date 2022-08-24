@@ -14,9 +14,9 @@ class StoreService {
     return decodedPhoneData;
   }
 
-  Future<dynamic> getBasket() async {
+  Future<dynamic> getCart() async {
     FetchHelper fetchData = FetchHelper();
-    var decodedBasketData = await fetchData.getBasketData();
-    return decodedBasketData;
+    var decodedCartData = await fetchData.getCartData();
+    return decodedCartData;
   }
 }

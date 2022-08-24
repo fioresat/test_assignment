@@ -40,7 +40,7 @@ class FetchHelper {
     }
   }
 
-  Future<dynamic> getBasketData() async {
+  Future<dynamic> getCartData() async {
     print('Request3...');
 
     http.Response response = await http.get(Uri.parse(Consts.basketUrl));
